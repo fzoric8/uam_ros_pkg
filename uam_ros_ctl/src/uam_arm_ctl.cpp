@@ -63,7 +63,7 @@ void ControlArm::initRobot() {
 void ControlArm::loadConfig() {
 
   // TODO: Add argument that's propagated through launch file
-  YAML::Node config = YAML::LoadFile("/root/uav_ws/src/uam_ros_pkg/uam_ros_ctl/config/aerial_manipulator.yaml");
+  YAML::Node config = YAML::LoadFile("/root/sim_ws/src/uam_ros_pkg/uam_ros_ctl/config/aerial_manipulator.yaml");
 
   // Set move group name and ee link
   GROUP_NAME = config["robot"]["arm_name"].as<std::string>(); //"panda_manipulator"; 
